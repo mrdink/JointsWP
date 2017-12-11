@@ -1,8 +1,8 @@
-<?php 
+<?php
 /**
  * The sidebar containing the main widget area
  */
- ?>
+	?>
 
 <div id="sidebar1" class="sidebar small-12 medium-4 large-4 cell" role="complementary">
 
@@ -15,7 +15,7 @@
 	<!-- This content shows up if there are no widgets defined in the backend. -->
 						
 	<div class="alert help">
-		<p><?php _e( 'Please activate some Widgets.', 'jointswp' );  ?></p>
+		<p><?php _e( 'Please activate some Widgets.', 'jointswp' ); ?></p>
 	</div>
 
 	<?php endif; ?>

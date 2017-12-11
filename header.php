@@ -26,9 +26,9 @@
 			<!-- Icons & Favicons -->
 			<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
 			<link href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-icon-touch.png" rel="apple-touch-icon" />	
-	    <?php } ?>
+		<?php } ?>
 
-		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 		<?php wp_head(); ?>
 
@@ -47,6 +47,6 @@
 							
 					 <!-- This navs will be applied to the topbar, above all content 
 						  To see additional nav styles, visit the /parts directory -->
-					 <?php get_template_part( 'parts/nav', 'offcanvas-topbar' ); ?>
-	 	
-				</header> <!-- end .header -->
+						<?php get_template_part( 'parts/nav', 'offcanvas-topbar' ); ?>
+		
+				 </header> <!-- end .header -->

@@ -1,11 +1,11 @@
-<?php 
+<?php
 /**
  * The template for displaying search results pages
  *
  * For more info: https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  */
- 	
-get_header(); ?>
+
+ get_header(); ?>
 			
 	<div class="content">
 
@@ -13,15 +13,19 @@ get_header(); ?>
 	
 			<main class="main small-12 medium-8 large-8 cell" role="main">
 				<header>
-					<h1 class="archive-title"><?php _e( 'Search Results for:', 'jointswp' ); ?> <?php echo esc_attr(get_search_query()); ?></h1>
+					<h1 class="archive-title"><?php _e( 'Search Results for:', 'jointswp' ); ?> <?php echo esc_attr( get_search_query() ); ?></h1>
 				</header>
 
-				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+				<?php
+				if ( have_posts() ) :
+					while ( have_posts() ) :
+						the_post();
+?>
 			 
 					<!-- To see additional archive styles, visit the /parts directory -->
 					<?php get_template_part( 'parts/loop', 'archive' ); ?>
-				    
-				<?php endwhile; ?>	
+				
+					<?php endwhile; ?>	
 
 					<?php joints_page_navi(); ?>
 					
@@ -29,11 +33,11 @@ get_header(); ?>
 				
 					<?php get_template_part( 'parts/content', 'missing' ); ?>
 						
-			    <?php endif; ?>
+				<?php endif; ?>
 	
-		    </main> <!-- end #main -->
+			</main> <!-- end #main -->
 		
-		    <?php get_sidebar(); ?>
+			<?php get_sidebar(); ?>
 		
 		</div> <!-- end #inner-content -->
 
